@@ -1,2 +1,2 @@
 # NASA-Mobile-App
-Test Application
+This a Test Application that exposes search functionality of the NAS Image and Video Library API
