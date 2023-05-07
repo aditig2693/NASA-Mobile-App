@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--NASA Images-->
+        <scene sceneID="uRB-0g-IXm">
+            <objects>
+                <tableViewController id="pzz-WJ-MTg" customClass="ImageListViewController" customModule="NASA_Mobile_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="cPr-6c-gDy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="pzz-WJ-MTg" id="DPJ-vJ-Q4y"/>
+                            <outlet property="delegate" destination="pzz-WJ-MTg" id="gtE-JM-mez"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="NASA Images" id="KXT-9g-EDg"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x7K-w9-eZz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="609" y="45"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tY5-wV-3ve">
+            <objects>
+                <viewController id="MCe-x6-DBf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mfH-do-h9I">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eYx-Tj-NEM">
+                                <rect key="frame" x="3" y="59" width="390" height="759"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q99-vz-8yB">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="267"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="267" id="DgM-3F-yXG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="e3Y-Wj-jAs">
+                                        <rect key="frame" x="0.0" y="269" width="379" height="490"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y53-nJ-76O">
+                                                <rect key="frame" x="0.0" y="0.0" width="379" height="490"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" systemColor="labelColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Q99-vz-8yB" firstAttribute="leading" secondItem="eYx-Tj-NEM" secondAttribute="leading" id="WC8-jf-npa"/>
+                                    <constraint firstAttribute="trailing" secondItem="e3Y-Wj-jAs" secondAttribute="trailing" constant="11" id="ppq-rE-MNo"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q99-vz-8yB" secondAttribute="trailing" id="s6X-F8-H4s"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fm5-II-pbp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="eYx-Tj-NEM" secondAttribute="bottom" id="5jU-gb-keG"/>
+                            <constraint firstItem="eYx-Tj-NEM" firstAttribute="leading" secondItem="fm5-II-pbp" secondAttribute="leading" constant="3" id="BWJ-eu-ZGi"/>
+                            <constraint firstItem="eYx-Tj-NEM" firstAttribute="top" secondItem="fm5-II-pbp" secondAttribute="top" id="Vec-rL-YA8"/>
+                            <constraint firstItem="fm5-II-pbp" firstAttribute="trailing" secondItem="eYx-Tj-NEM" secondAttribute="trailing" id="ayg-FM-5Pe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gej-6A-7Zd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1342.7480916030534" y="43.661971830985919"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="twv-Lk-mze">
+            <objects>
+                <navigationController id="3Fp-er-IMI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nMe-cy-cFK">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pzz-WJ-MTg" kind="relationship" relationship="rootViewController" id="fFg-z6-CTu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFI-RB-ALT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-296" y="45"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
