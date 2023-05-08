@@ -18,11 +18,11 @@ class ImageListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName:"ImageListViewCell", bundle: nil), forCellReuseIdentifier:"ImageListViewCell")
-        downloadData()
         setUpSearchController()
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = false
-        
+         
+        downloadData()
     }
     
     
@@ -50,6 +50,7 @@ class ImageListViewController: UITableViewController {
         searchController.definesPresentationContext = true
         
     }
+
 }
 
 extension ImageListViewController {
@@ -79,6 +80,25 @@ extension ImageListViewController {
             downloadData()
         }
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "showImageDetails", sender: viewModel.items[indexPath.row])
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showImageDetails" {
+            if let detailViewController = segue.destination as? ImageDetailViewController {
+                guard let data = sender as? NASAItem else {
+                    return
+                }
+                detailViewController.imageDetailItem = data
+            }
+        }
+        
+    }
+
+    
 }
 
 extension ImageListViewController : UISearchBarDelegate {

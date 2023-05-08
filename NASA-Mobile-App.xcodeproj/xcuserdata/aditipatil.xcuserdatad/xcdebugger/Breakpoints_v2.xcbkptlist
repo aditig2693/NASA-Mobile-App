@@ -3,4 +3,54 @@
    uuid = "66C55753-36D4-488F-AFC1-90CB20620EDC"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "79E7682D-8AC4-4A91-A9D5-2BD9FB849DFF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "NASA-Mobile-App/View/ImageDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "setupUIElements()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "79E7682D-8AC4-4A91-A9D5-2BD9FB849DFF - 79759199aa1d656b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NASA_Mobile_App.ImageDetailViewController.setupUIElements() -&gt; ()"
+                  moduleName = "NASA-Mobile-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aditipatil/NASA-Mobile-App/NASA-Mobile-App/View/ImageDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "1520">
+               </Location>
+               <Location
+                  uuid = "79E7682D-8AC4-4A91-A9D5-2BD9FB849DFF - 79759199aa1d6aef"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "NASA_Mobile_App.ImageDetailViewController.setupUIElements() -&gt; ()"
+                  moduleName = "NASA-Mobile-App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aditipatil/NASA-Mobile-App/NASA-Mobile-App/View/ImageDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "2004">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

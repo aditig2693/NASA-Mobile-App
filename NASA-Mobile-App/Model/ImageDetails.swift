@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import UIKit
 struct NASAItem {
     
     let title: String
@@ -14,7 +14,6 @@ struct NASAItem {
     let nasa_id: String
     let date_created: String
     let href: String
-
     
     init?(from item: Item) {
         guard let title = item.data.first?.title, let description = item.data.first?.description, let nasa_id = item.data.first?.nasa_id, let date_created = item.data.first?.date_created, let href = item.links.first?.href else {
@@ -57,8 +56,4 @@ struct Link: Decodable {
     let rel: String
     let render: String?
 }
-
-//struct Metadata: Decodable {
-//    let total_hits: Int
-//}
 
