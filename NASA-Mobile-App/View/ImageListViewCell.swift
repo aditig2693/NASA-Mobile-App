@@ -9,15 +9,20 @@ import UIKit
 
 class ImageListViewCell: UITableViewCell {
 
+    @IBOutlet weak var imageTitle: UILabel!
+    @IBOutlet weak var imageView_NASA: UIImageView!
+    func configure(item :NASAItem?) {
+        guard let url = item?.href, let title = item?.title else {
+            return
+        }
+        imageView_NASA.image(url:url)
+        imageTitle.text = title
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
 }

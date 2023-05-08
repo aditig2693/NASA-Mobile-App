@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A6E3B5672A07CF4E0001CF26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5662A07CF4E0001CF26 /* AppDelegate.swift */; };
 		A6E3B5692A07CF4E0001CF26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5682A07CF4E0001CF26 /* SceneDelegate.swift */; };
-		A6E3B56B2A07CF4E0001CF26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B56A2A07CF4E0001CF26 /* ViewController.swift */; };
 		A6E3B56E2A07CF4E0001CF26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E3B56C2A07CF4E0001CF26 /* Main.storyboard */; };
 		A6E3B5702A07CF4F0001CF26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E3B56F2A07CF4F0001CF26 /* Assets.xcassets */; };
 		A6E3B5732A07CF4F0001CF26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E3B5712A07CF4F0001CF26 /* LaunchScreen.storyboard */; };
@@ -19,6 +18,12 @@
 		A6E3B59A2A07D1D10001CF26 /* ImageListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5982A07D1D10001CF26 /* ImageListViewCell.swift */; };
 		A6E3B59B2A07D1D10001CF26 /* ImageListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E3B5992A07D1D10001CF26 /* ImageListViewCell.xib */; };
 		A6E3B59D2A07D7070001CF26 /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B59C2A07D7070001CF26 /* ImageListViewController.swift */; };
+		A6E3B59F2A07EB600001CF26 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B59E2A07EB600001CF26 /* ImageDetailViewController.swift */; };
+		A6E3B5A12A07ECEA0001CF26 /* ImageDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5A02A07ECEA0001CF26 /* ImageDetails.swift */; };
+		A6E3B5A42A07F5960001CF26 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A6E3B5A32A07F5960001CF26 /* Alamofire */; };
+		A6E3B5A92A07F62C0001CF26 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5A82A07F62C0001CF26 /* ImageViewModel.swift */; };
+		A6E3B5AB2A07F6D70001CF26 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5AA2A07F6D70001CF26 /* APIManager.swift */; };
+		A6E3B5AD2A0824360001CF26 /* UIImageView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5AC2A0824360001CF26 /* UIImageView+Extention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +47,6 @@
 		A6E3B5632A07CF4E0001CF26 /* NASA-Mobile-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA-Mobile-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E3B5662A07CF4E0001CF26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6E3B5682A07CF4E0001CF26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A6E3B56A2A07CF4E0001CF26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A6E3B56D2A07CF4E0001CF26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6E3B56F2A07CF4F0001CF26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6E3B5722A07CF4F0001CF26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +59,11 @@
 		A6E3B5982A07D1D10001CF26 /* ImageListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewCell.swift; sourceTree = "<group>"; };
 		A6E3B5992A07D1D10001CF26 /* ImageListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageListViewCell.xib; sourceTree = "<group>"; };
 		A6E3B59C2A07D7070001CF26 /* ImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
+		A6E3B59E2A07EB600001CF26 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		A6E3B5A02A07ECEA0001CF26 /* ImageDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetails.swift; sourceTree = "<group>"; };
+		A6E3B5A82A07F62C0001CF26 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
+		A6E3B5AA2A07F6D70001CF26 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A6E3B5AC2A0824360001CF26 /* UIImageView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extention.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E3B5A42A07F5960001CF26 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,13 +115,14 @@
 		A6E3B5652A07CF4E0001CF26 /* NASA-Mobile-App */ = {
 			isa = PBXGroup;
 			children = (
+				A6E3B5A72A07F6150001CF26 /* ViewModel */,
+				A6E3B5A62A07F5E20001CF26 /* Model */,
+				A6E3B5A52A07F5A40001CF26 /* View */,
 				A6E3B5662A07CF4E0001CF26 /* AppDelegate.swift */,
 				A6E3B5682A07CF4E0001CF26 /* SceneDelegate.swift */,
-				A6E3B56A2A07CF4E0001CF26 /* ViewController.swift */,
-				A6E3B59C2A07D7070001CF26 /* ImageListViewController.swift */,
+				A6E3B5AA2A07F6D70001CF26 /* APIManager.swift */,
+				A6E3B5AC2A0824360001CF26 /* UIImageView+Extention.swift */,
 				A6E3B56C2A07CF4E0001CF26 /* Main.storyboard */,
-				A6E3B5982A07D1D10001CF26 /* ImageListViewCell.swift */,
-				A6E3B5992A07D1D10001CF26 /* ImageListViewCell.xib */,
 				A6E3B56F2A07CF4F0001CF26 /* Assets.xcassets */,
 				A6E3B5712A07CF4F0001CF26 /* LaunchScreen.storyboard */,
 				A6E3B5742A07CF4F0001CF26 /* Info.plist */,
@@ -136,6 +147,33 @@
 			path = "NASA-Mobile-AppUITests";
 			sourceTree = "<group>";
 		};
+		A6E3B5A52A07F5A40001CF26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6E3B59C2A07D7070001CF26 /* ImageListViewController.swift */,
+				A6E3B59E2A07EB600001CF26 /* ImageDetailViewController.swift */,
+				A6E3B5982A07D1D10001CF26 /* ImageListViewCell.swift */,
+				A6E3B5992A07D1D10001CF26 /* ImageListViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6E3B5A62A07F5E20001CF26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A6E3B5A02A07ECEA0001CF26 /* ImageDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6E3B5A72A07F6150001CF26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6E3B5A82A07F62C0001CF26 /* ImageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +190,9 @@
 			dependencies = (
 			);
 			name = "NASA-Mobile-App";
+			packageProductDependencies = (
+				A6E3B5A32A07F5960001CF26 /* Alamofire */,
+			);
 			productName = "NASA-Mobile-App";
 			productReference = A6E3B5632A07CF4E0001CF26 /* NASA-Mobile-App.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +265,9 @@
 				Base,
 			);
 			mainGroup = A6E3B55A2A07CF4E0001CF26;
+			packageReferences = (
+				A6E3B5A22A07F5960001CF26 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = A6E3B5642A07CF4E0001CF26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,9 +312,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E3B5AB2A07F6D70001CF26 /* APIManager.swift in Sources */,
+				A6E3B5AD2A0824360001CF26 /* UIImageView+Extention.swift in Sources */,
+				A6E3B5A92A07F62C0001CF26 /* ImageViewModel.swift in Sources */,
 				A6E3B59D2A07D7070001CF26 /* ImageListViewController.swift in Sources */,
+				A6E3B5A12A07ECEA0001CF26 /* ImageDetails.swift in Sources */,
+				A6E3B59F2A07EB600001CF26 /* ImageDetailViewController.swift in Sources */,
 				A6E3B59A2A07D1D10001CF26 /* ImageListViewCell.swift in Sources */,
-				A6E3B56B2A07CF4E0001CF26 /* ViewController.swift in Sources */,
 				A6E3B5672A07CF4E0001CF26 /* AppDelegate.swift in Sources */,
 				A6E3B5692A07CF4E0001CF26 /* SceneDelegate.swift in Sources */,
 			);
@@ -608,6 +656,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6E3B5A22A07F5960001CF26 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6E3B5A32A07F5960001CF26 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6E3B5A22A07F5960001CF26 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A6E3B55B2A07CF4E0001CF26 /* Project object */;
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Fp-er-IMI">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -23,21 +23,24 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="NASA Images" id="KXT-9g-EDg"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <segue destination="MCe-x6-DBf" kind="show" identifier="showImageDetails" id="G1X-jM-mnX"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x7K-w9-eZz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="609" y="45"/>
         </scene>
-        <!--View Controller-->
+        <!--Image Detail View Controller-->
         <scene sceneID="tY5-wV-3ve">
             <objects>
-                <viewController id="MCe-x6-DBf" sceneMemberID="viewController">
+                <viewController id="MCe-x6-DBf" customClass="ImageDetailViewController" customModule="NASA_Mobile_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mfH-do-h9I">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="eYx-Tj-NEM">
-                                <rect key="frame" x="3" y="59" width="390" height="759"/>
+                                <rect key="frame" x="3" y="103" width="390" height="715"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q99-vz-8yB">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="267"/>
@@ -46,10 +49,10 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="e3Y-Wj-jAs">
-                                        <rect key="frame" x="0.0" y="269" width="379" height="490"/>
+                                        <rect key="frame" x="0.0" y="269" width="379" height="446"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y53-nJ-76O">
-                                                <rect key="frame" x="0.0" y="0.0" width="379" height="490"/>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y53-nJ-76O">
+                                                <rect key="frame" x="0.0" y="0.0" width="379" height="446"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                 <color key="textColor" systemColor="labelColor"/>
@@ -75,6 +78,11 @@
                             <constraint firstItem="fm5-II-pbp" firstAttribute="trailing" secondItem="eYx-Tj-NEM" secondAttribute="trailing" id="ayg-FM-5Pe"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="i1M-fp-lha"/>
+                    <connections>
+                        <outlet property="descriptionTextView" destination="Y53-nJ-76O" id="Kgu-d1-XQH"/>
+                        <outlet property="imageView" destination="Q99-vz-8yB" id="qXF-5q-OLD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gej-6A-7Zd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
