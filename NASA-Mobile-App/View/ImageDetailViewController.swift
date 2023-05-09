@@ -7,8 +7,8 @@
 
 import UIKit
 class ImageDetailViewController: UIViewController {
-
-    @IBOutlet weak var dateCreated: UILabel!
+    
+    @IBOutlet weak var dateCreated: UILabel?
     @IBOutlet weak var descriptionTextView: UITextView?
     @IBOutlet weak var imageView: UIImageView?
     var imageDetailItem: NASAItem!
@@ -18,7 +18,7 @@ class ImageDetailViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
     func setupUIElements(){
         guard let data = imageDetailItem else {
             return
@@ -31,7 +31,7 @@ class ImageDetailViewController: UIViewController {
         if let date = dateFormatter.date(from: data.date_created) {
             dateFormatter.dateFormat = "yyyy-MM-dd" // Set the output format
             let formattedDate = dateFormatter.string(from: date)
-            self.dateCreated.text = " Date Created: " + formattedDate
+            self.dateCreated?.text = " Date Created: " + formattedDate
             print(formattedDate) // Prints: 2011-06-08
         } else {
             print("Invalid date string") // Handle the case where the date string is invalid
