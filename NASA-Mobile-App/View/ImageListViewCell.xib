@@ -46,6 +46,7 @@
                 <color key="backgroundColor" red="1" green="0.99060720530000002" blue="0.99515095919999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <accessibility key="accessibilityConfiguration" identifier="listViewCell"/>
             <connections>
                 <outlet property="imageTitle" destination="Kb7-To-S1P" id="2R1-wF-p15"/>
                 <outlet property="imageView_NASA" destination="feB-VF-eZx" id="S0j-3z-bYd"/>

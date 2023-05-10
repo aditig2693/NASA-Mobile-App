@@ -12,9 +12,6 @@
 		A6E3B56E2A07CF4E0001CF26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E3B56C2A07CF4E0001CF26 /* Main.storyboard */; };
 		A6E3B5702A07CF4F0001CF26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6E3B56F2A07CF4F0001CF26 /* Assets.xcassets */; };
 		A6E3B5732A07CF4F0001CF26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6E3B5712A07CF4F0001CF26 /* LaunchScreen.storyboard */; };
-		A6E3B57E2A07CF4F0001CF26 /* NASA_Mobile_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B57D2A07CF4F0001CF26 /* NASA_Mobile_AppTests.swift */; };
-		A6E3B5882A07CF4F0001CF26 /* NASA_Mobile_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5872A07CF4F0001CF26 /* NASA_Mobile_AppUITests.swift */; };
-		A6E3B58A2A07CF4F0001CF26 /* NASA_Mobile_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5892A07CF4F0001CF26 /* NASA_Mobile_AppUITestsLaunchTests.swift */; };
 		A6E3B59A2A07D1D10001CF26 /* ImageListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5982A07D1D10001CF26 /* ImageListViewCell.swift */; };
 		A6E3B59B2A07D1D10001CF26 /* ImageListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6E3B5992A07D1D10001CF26 /* ImageListViewCell.xib */; };
 		A6E3B59D2A07D7070001CF26 /* ImageListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B59C2A07D7070001CF26 /* ImageListViewController.swift */; };
@@ -24,6 +21,11 @@
 		A6E3B5A92A07F62C0001CF26 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5A82A07F62C0001CF26 /* ImageViewModel.swift */; };
 		A6E3B5AD2A0824360001CF26 /* UIImageView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5AC2A0824360001CF26 /* UIImageView+Extention.swift */; };
 		A6E3B5AF2A0B009B0001CF26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5AE2A0B009B0001CF26 /* Constants.swift */; };
+		A6E3B5B12A0C38DD0001CF26 /* ImageViewModelUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5B02A0C38DD0001CF26 /* ImageViewModelUnitTests.swift */; };
+		A6E3B5B22A0C39CF0001CF26 /* ImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5A82A07F62C0001CF26 /* ImageViewModel.swift */; };
+		A6E3B5B32A0C3E720001CF26 /* ImageDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5A02A07ECEA0001CF26 /* ImageDetails.swift */; };
+		A6E3B5B42A0C3E870001CF26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5AE2A0B009B0001CF26 /* Constants.swift */; };
+		A6E3B5B82A0C476C0001CF26 /* ImagesListViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E3B5B72A0C476C0001CF26 /* ImagesListViewUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +54,7 @@
 		A6E3B5722A07CF4F0001CF26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6E3B5742A07CF4F0001CF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6E3B5792A07CF4F0001CF26 /* NASA-Mobile-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NASA-Mobile-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6E3B57D2A07CF4F0001CF26 /* NASA_Mobile_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_Mobile_AppTests.swift; sourceTree = "<group>"; };
 		A6E3B5832A07CF4F0001CF26 /* NASA-Mobile-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NASA-Mobile-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A6E3B5872A07CF4F0001CF26 /* NASA_Mobile_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_Mobile_AppUITests.swift; sourceTree = "<group>"; };
-		A6E3B5892A07CF4F0001CF26 /* NASA_Mobile_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASA_Mobile_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A6E3B5982A07D1D10001CF26 /* ImageListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewCell.swift; sourceTree = "<group>"; };
 		A6E3B5992A07D1D10001CF26 /* ImageListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageListViewCell.xib; sourceTree = "<group>"; };
 		A6E3B59C2A07D7070001CF26 /* ImageListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +63,8 @@
 		A6E3B5A82A07F62C0001CF26 /* ImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModel.swift; sourceTree = "<group>"; };
 		A6E3B5AC2A0824360001CF26 /* UIImageView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extention.swift"; sourceTree = "<group>"; };
 		A6E3B5AE2A0B009B0001CF26 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A6E3B5B02A0C38DD0001CF26 /* ImageViewModelUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewModelUnitTests.swift; sourceTree = "<group>"; };
+		A6E3B5B72A0C476C0001CF26 /* ImagesListViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +134,7 @@
 		A6E3B57C2A07CF4F0001CF26 /* NASA-Mobile-AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				A6E3B57D2A07CF4F0001CF26 /* NASA_Mobile_AppTests.swift */,
+				A6E3B5B02A0C38DD0001CF26 /* ImageViewModelUnitTests.swift */,
 			);
 			path = "NASA-Mobile-AppTests";
 			sourceTree = "<group>";
@@ -141,8 +142,7 @@
 		A6E3B5862A07CF4F0001CF26 /* NASA-Mobile-AppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A6E3B5872A07CF4F0001CF26 /* NASA_Mobile_AppUITests.swift */,
-				A6E3B5892A07CF4F0001CF26 /* NASA_Mobile_AppUITestsLaunchTests.swift */,
+				A6E3B5B72A0C476C0001CF26 /* ImagesListViewUITests.swift */,
 			);
 			path = "NASA-Mobile-AppUITests";
 			sourceTree = "<group>";
@@ -328,7 +328,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6E3B57E2A07CF4F0001CF26 /* NASA_Mobile_AppTests.swift in Sources */,
+				A6E3B5B42A0C3E870001CF26 /* Constants.swift in Sources */,
+				A6E3B5B22A0C39CF0001CF26 /* ImageViewModel.swift in Sources */,
+				A6E3B5B12A0C38DD0001CF26 /* ImageViewModelUnitTests.swift in Sources */,
+				A6E3B5B32A0C3E720001CF26 /* ImageDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,8 +339,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6E3B5882A07CF4F0001CF26 /* NASA_Mobile_AppUITests.swift in Sources */,
-				A6E3B58A2A07CF4F0001CF26 /* NASA_Mobile_AppUITestsLaunchTests.swift in Sources */,
+				A6E3B5B82A0C476C0001CF26 /* ImagesListViewUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

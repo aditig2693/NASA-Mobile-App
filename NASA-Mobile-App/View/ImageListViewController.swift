@@ -19,6 +19,7 @@ class ImageListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName:AppConstants.imageListViewCell, bundle: nil), forCellReuseIdentifier:AppConstants.imageListViewCell)
+        tableView.accessibilityIdentifier = "imageListTableView"
         setupEmptyView()
         setUpSearchController()
         navigationItem.searchController = searchController
@@ -30,7 +31,7 @@ class ImageListViewController: UITableViewController {
     
     @objc private func downloadData(){
         isLoading = true
-        viewModel.getNASAItems(searchString: searchString ?? "", completion: { response in
+        viewModel.getNASAItems(searchString: searchString ?? "", endPoint: APIConstants.search, completion: { response in
             switch response {
             case .success:
                 DispatchQueue.main.async {
