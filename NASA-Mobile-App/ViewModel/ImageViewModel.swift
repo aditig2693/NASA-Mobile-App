@@ -32,7 +32,7 @@ class ImageViewModel {
     // MARK: Public Methods
     func getNASAItems(searchString: String, endPoint:String,completion: @escaping (HTTPResponse) -> ()) {
         //Setting the page size to 20 items
-        guard let encodedString = (APIConstants.baseUrl + endPoint + "?q=\(searchString)" + APIConstants.queryParameter + "&page=\(currentPage)").addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed) else {
+        guard let encodedString = (APIConstants.baseUrl + endPoint + "?q=\(searchString)" + APIConstants.queryParameter + "&page=\(currentPage)").addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed), currentPage < 100 else {
             print("Unable to encode string")
             return
         }
